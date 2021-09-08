@@ -1,23 +1,20 @@
 import { Box, Link, Flex, Heading, Icon } from "@chakra-ui/react";
 import { FiInstagram, FiLinkedin, FiGithub, FiFacebook } from "react-icons/fi";
 import { Link as RouterLink } from "react-router-dom";
-import { motion } from "framer-motion";
-import { blackBox } from "./animation";
-const BlackBox = motion(Box);
+import PageAnimation from "../components/PageAnimation";
 
 const SocialIcon = ({ children }) => {
   return (
     <Link
       h="12"
       w="12"
-      bg="heading.100"
       display="flex"
       alignItems="center"
       justifyContent="center"
       borderRadius="50%"
       m="1"
       _hover={{
-        bg: "heading.200",
+        bg: "primary.100",
       }}
     >
       {children}
@@ -28,32 +25,24 @@ const SocialIcon = ({ children }) => {
 const HomeScreen = () => {
   return (
     <>
-      <BlackBox
-        pos="fixed"
-        zIndex="199999999999999999999"
-        w="100vw"
-        bg="purple.700"
-        initial="initial"
-        animate="animate"
-        exit="exit"
-        variants={blackBox}
-        transition={{
-          ease: "easeInOut",
-          duration: 0.8,
-          delay: 0.4,
-        }}
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-      />
-      <Flex direction="column" justify="center" align="center" wrap="wrap">
+      <PageAnimation color="purple.700" />
+
+      <Flex
+        direction="column"
+        justify="center"
+        align="center"
+        wrap="wrap"
+        w="full"
+        h="100vh"
+      >
         <Heading
           as="h1"
           mb="3"
-          color="heading.100"
-          fontSize={{ base: "1.5rem", sm: "3rem", md: "3rem", lg: "4rem" }}
+          color="primary.100"
+          fontSize={{ base: "50px", sm: "50px", md: "3rem", lg: "4rem" }}
           fontWeight="bold"
-          textShadow="1px 1px white"
+          textShadow="1px 1px primary.100"
+          textAlign="center"
         >
           Ganesh Mohanty
         </Heading>
@@ -65,13 +54,13 @@ const HomeScreen = () => {
           letterSpacing="wide"
           fontWeight="medium"
         >
-          Full Satck Javascript Devloper
+          Full Satck Javascript Developer
         </Heading>
 
         <Flex
           wrap="wrap"
           direction={{ sm: "row", base: "column", md: "row", lg: "row" }}
-          mt="4"
+          mt="3rem"
           mb="4"
         >
           <Box m="1rem">
@@ -93,7 +82,7 @@ const HomeScreen = () => {
               textAlign="center"
               _hover={{
                 textDecoration: "none",
-                bg: "heading.100",
+                bg: "primary.100",
                 color: "white",
               }}
             >
@@ -119,7 +108,7 @@ const HomeScreen = () => {
               textAlign="center"
               _hover={{
                 textDecoration: "none",
-                bg: "heading.100",
+                bg: "primary.100",
                 color: "white",
               }}
             >

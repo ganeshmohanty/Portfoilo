@@ -67,10 +67,10 @@ const Header = () => {
             <Icon as={BiUser} w="5" h="5" />
           </IconLink>
           <IconLink
-            title="Resume"
+            title="Blogs"
             isOpen={isOpen}
             setIsOpen={setIsOpen}
-            url="/resume"
+            url="/blogs"
           >
             <Icon as={BiFileBlank} w="5" h="5" />
           </IconLink>

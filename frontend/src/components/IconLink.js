@@ -27,7 +27,7 @@ const IconLink = ({ children, title, url, setIsOpen, isOpen }) => {
         w: { sm: "100%", md: "8rem" },
         borderRadius: "50px",
         color: "white",
-        background: "#756BD1",
+        background: "primary.100",
         textDecoration: "none",
       }}
       role="group"
