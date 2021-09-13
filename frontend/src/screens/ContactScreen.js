@@ -1,4 +1,4 @@
-import { Grid, Flex, Input, Box } from "@chakra-ui/react";
+import { Grid, Flex, Input, Box, Heading } from "@chakra-ui/react";
 import {
   HiLocationMarker,
   HiOutlineMail,
@@ -6,7 +6,10 @@ import {
 } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
 import { PageHeader } from "../components/TitleHeader";
-import PageAnimation from "../components/PageAnimation";
+import {
+  PageAnimation,
+  PageAnimationSecond,
+} from "../components/PageAnimation";
 import { TextIcon } from "../components/TextIcon";
 
 const ContactScreen = () => {
@@ -47,16 +50,7 @@ const ContactScreen = () => {
               Mumbai ,Maharastra,India
             </TextIcon>
           </Flex>
-          <Flex direction="column" justifyContent="center" align="center">
-            <Flex>
-              <Box>
-                <Input />
-              </Box>
-              <Box>
-                <Input />
-              </Box>
-            </Flex>
-          </Flex>
+          <Flex></Flex>
         </Grid>
       </Flex>
     </>

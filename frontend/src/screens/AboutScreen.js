@@ -17,7 +17,10 @@ import { BiCycling } from "react-icons/bi";
 import image from "../images/my.jpg";
 import { PageHeader, BlackTitle } from "../components/TitleHeader";
 import { TextIcon, SkillIcon } from "../components/TextIcon";
-import PageAnimation from "../components/PageAnimation";
+import {
+  PageAnimation,
+  PageAnimationSecond,
+} from "../components/PageAnimation";
 
 const AboutScreen = () => {
   return (

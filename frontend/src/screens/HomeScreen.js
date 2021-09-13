@@ -1,7 +1,10 @@
 import { Box, Link, Flex, Heading, Icon } from "@chakra-ui/react";
 import { FiInstagram, FiLinkedin, FiGithub, FiFacebook } from "react-icons/fi";
 import { Link as RouterLink } from "react-router-dom";
-import PageAnimation from "../components/PageAnimation";
+import {
+  PageAnimation,
+  PageAnimationSecond,
+} from "../components/PageAnimation";
 
 const SocialIcon = ({ children }) => {
   return (
@@ -23,6 +26,7 @@ const SocialIcon = ({ children }) => {
 };
 
 const HomeScreen = () => {
+  const NAME = "{ GANESH MOHANTY }";
   return (
     <>
       <PageAnimation color="purple.700" />
@@ -44,17 +48,16 @@ const HomeScreen = () => {
           textShadow="1px 1px primary.100"
           textAlign="center"
         >
-          Ganesh Mohanty
+          {NAME}
         </Heading>
         <Heading
           as="h2"
           color="whiteAlpha.700"
           fontSize={{ lg: "2xl", md: "1xl" }}
-          textShadow="1px 1px "
           letterSpacing="wide"
           fontWeight="medium"
         >
-          Full Satck Javascript Developer
+          Full Stack Javascript Developer
         </Heading>
 
         <Flex

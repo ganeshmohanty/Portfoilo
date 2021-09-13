@@ -17,7 +17,54 @@ export const blackBox = {
     opacity: 1,
   },
 };
-const PageAnimation = ({ color }) => {
+const PageAnimation = ({ color, mode }) => {
+  return (
+    <>
+      <motion.div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          bottom: 0,
+          right: 0,
+          width: "100%",
+          height: "100%",
+          background: "#000",
+          transformOrigin: "left",
+          zIndex: 9999999,
+          backgroundColor: "red",
+        }}
+        initial={{ scaleX: 0 }}
+        animate={{ scaleX: 0 }}
+        transition={{ duration: 0.3 }}
+        exit={{ scaleX: 1 }}
+        transition={{ duration: 1 }}
+      />
+      <motion.div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          bottom: 0,
+          right: 0,
+          width: "100%",
+          height: "100%",
+          background: "#000",
+          transformOrigin: "right",
+          zIndex: 9999999999,
+          backgroundColor: "green",
+        }}
+        initial={{ scaleX: 1 }}
+        animate={{ scaleX: 0 }}
+        transition={{ duration: 0.3 }}
+        exit={{ scaleX: 0 }}
+        transition={{ duration: 1 }}
+      />
+    </>
+  );
+};
+
+const PageAnimationSecond = ({ color }) => {
   return (
     <BlackBox
       pos="fixed"
@@ -37,4 +84,4 @@ const PageAnimation = ({ color }) => {
   );
 };
 
-export default PageAnimation;
+export { PageAnimation, PageAnimationSecond };

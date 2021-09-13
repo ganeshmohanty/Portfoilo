@@ -15,7 +15,6 @@ const IconLink = ({ children, title, url, setIsOpen, isOpen }) => {
       h="56px"
       w={{ base: "100%", sm: "100%", lg: "56px", md: "56px" }}
       mb="8px"
-      transition="0.4s"
       fontSize="15px"
       borderRadius="56px"
       bg="gray.300"
@@ -29,6 +28,7 @@ const IconLink = ({ children, title, url, setIsOpen, isOpen }) => {
         color: "white",
         background: "primary.100",
         textDecoration: "none",
+        transition: "0.4s",
       }}
       role="group"
       onClick={() => setIsOpen(false)}
