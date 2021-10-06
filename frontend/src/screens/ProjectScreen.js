@@ -45,7 +45,11 @@ const ProjectScreen = () => {
             <Image src={rst1} objectFit="cover" w="full"></Image>
           </Flex>
 
-          <Box p="6" w="80vw" mb="10">
+          <Box
+            p={{ sm: "1rem", base: "1rem", md: "5rem", lg: "5rem" }}
+            w="80vw"
+            mb="10"
+          >
             <Heading
               as="h3"
               color="white"
