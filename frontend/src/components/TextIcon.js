@@ -2,9 +2,29 @@ import { Flex, Icon, Text } from "@chakra-ui/react";
 
 const TextIcon = ({ children, icon }) => {
   return (
-    <Flex w="full" p="3" align="center" bg="#1A1A1D" borderRadius="lg" mb="2">
+    <Flex
+      w="full"
+      p="3"
+      align="center"
+      bg="#1A1A1D"
+      borderRadius="lg"
+      mb="2"
+      flexWrap="wrap"
+      justifyContent={{
+        sm: "center",
+        base: "center",
+        lg: "flex-start",
+        md: "center",
+      }}
+    >
       <Icon as={icon} color="primary.100" fontSize="1.5rem" />
-      <Text color="white" fontSize="1rem" ml="4" textAlign="center">
+      <Text
+        color="white"
+        fontSize="1rem"
+        ml="4"
+        textAlign="center"
+        wordBreak="break-word"
+      >
         {children}
       </Text>
     </Flex>

@@ -1,12 +1,9 @@
 import { Box, Link, Flex, Heading, Icon } from "@chakra-ui/react";
 import { FiInstagram, FiLinkedin, FiGithub, FiFacebook } from "react-icons/fi";
 import { Link as RouterLink } from "react-router-dom";
-import {
-  PageAnimation,
-  PageAnimationSecond,
-} from "../components/PageAnimation";
+import { PageAnimation } from "../components/PageAnimation";
 
-const SocialIcon = ({ children }) => {
+const SocialIcon = ({ children, url }) => {
   return (
     <Link
       h="12"
@@ -19,6 +16,8 @@ const SocialIcon = ({ children }) => {
       _hover={{
         bg: "primary.100",
       }}
+      href={url}
+      target="_blank"
     >
       {children}
     </Link>
@@ -120,20 +119,20 @@ const HomeScreen = () => {
           </Box>
         </Flex>
         <Flex mt="1rem" wrap="wrap">
-          <SocialIcon>
+          <SocialIcon url="https://github.com/ganeshmohanty">
             <Icon
               as={FiGithub}
               fontSize={{ sm: "10px", md: "20px", lg: "20px" }}
               color="whiteAlpha.800"
             />
           </SocialIcon>
-          <SocialIcon>
+          <SocialIcon url="https://www.linkedin.com/in/ganesh-mohanty-16b672211/">
             <Icon as={FiLinkedin} fontSize="20px" color="whiteAlpha.800" />
           </SocialIcon>
-          <SocialIcon>
+          <SocialIcon url="https://www.instagram.com/ganeshat3000/">
             <Icon as={FiInstagram} fontSize="20px" color="whiteAlpha.800" />
           </SocialIcon>
-          <SocialIcon>
+          <SocialIcon url="https://www.facebook.com/profile.php?id=100009877802213">
             <Icon as={FiFacebook} fontSize="20px" color="whiteAlpha.800" />
           </SocialIcon>
         </Flex>

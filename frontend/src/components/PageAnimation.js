@@ -36,7 +36,6 @@ const PageAnimation = ({ color, mode }) => {
         }}
         initial={{ scaleX: 0 }}
         animate={{ scaleX: 0 }}
-        transition={{ duration: 0.3 }}
         exit={{ scaleX: 1 }}
         transition={{ duration: 1 }}
       />
@@ -56,7 +55,6 @@ const PageAnimation = ({ color, mode }) => {
         }}
         initial={{ scaleX: 1 }}
         animate={{ scaleX: 0 }}
-        transition={{ duration: 0.3 }}
         exit={{ scaleX: 0 }}
         transition={{ duration: 1 }}
       />

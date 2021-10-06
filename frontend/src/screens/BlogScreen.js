@@ -1,9 +1,6 @@
 import { Grid, Flex } from "@chakra-ui/react";
 
-import {
-  PageAnimation,
-  PageAnimationSecond,
-} from "../components/PageAnimation";
+import { PageAnimation } from "../components/PageAnimation";
 import { PageHeader } from "../components/TitleHeader";
 import LargeBox from "../components/LargeBox";
 
@@ -11,7 +8,7 @@ const BlogScreen = () => {
   return (
     <>
       <PageAnimation color="blue.700" />
-      <PageHeader children="My Blogs" />
+      <PageHeader children="My Blogs(Comming soon!)" />
       <Flex
         w="100%"
         justifyContent="center"
