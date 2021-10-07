@@ -18,6 +18,7 @@ import image from "../images/my.jpg";
 import { PageHeader, BlackTitle } from "../components/TitleHeader";
 import { TextIcon, SkillIcon } from "../components/TextIcon";
 import { PageAnimation } from "../components/PageAnimation";
+import resume from "../images/resume.pdf";
 
 const AboutScreen = () => {
   return (
@@ -46,6 +47,8 @@ const AboutScreen = () => {
             color="white"
             textDecoration="none"
             display={{ sm: "none", base: "none", md: "block", lg: "block" }}
+            href={resume}
+            target="_blank"
           >
             Download CV
           </Link>

@@ -94,7 +94,7 @@ const HomeScreen = () => {
           <Box m="1rem">
             <Link
               as={RouterLink}
-              to="/contact"
+              to="/about"
               bg="whiteAlpha.800"
               p={{
                 sm: "7px 20px",
@@ -114,7 +114,7 @@ const HomeScreen = () => {
                 color: "white",
               }}
             >
-              Download cv
+              About Me
             </Link>
           </Box>
         </Flex>
